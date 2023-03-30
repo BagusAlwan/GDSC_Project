@@ -19,31 +19,28 @@ class mainScreen extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(top: 9),
                 child: const Text(
-                  "[APP NAME/LOGO]",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                  "StudyPal",
+                  style: TextStyle(
+                      fontSize: 45,
+                      fontWeight: FontWeight.w700,
+                      color: PrimaryColor),
                 ),
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 10,
             ),
             const Text(
-              "Description yadda yadda",
+              "Explore, Connect, and Befriend",
               style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
             ),
             SizedBox(
               height: 30,
             ),
-            Container(
-              width: 245,
-              height: 245,
-              decoration: BoxDecoration(color: Color(0xffD9D9D9)),
-              child: Center(
-                child: Text(
-                  "Business style image and stuff",
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
-                ),
-              ),
+            Image(
+              height: 300,
+              width: 400,
+              image: AssetImage('assets/Logo.png'),
             ),
             SizedBox(
               height: 19,

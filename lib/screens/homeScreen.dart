@@ -19,9 +19,27 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         centerTitle: false,
-        title: Text(
-          "[App name and log]",
-          style: TextStyle(color: PrimaryColor),
+        title: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 30, left: 20),
+              child: Container(
+                width: 20,
+                height: 55,
+                child: Image.asset(
+                  'assets/Logo.png',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Text(
+                "   StudyPal",
+                style: TextStyle(color: PrimaryColor),
+              ),
+            ),
+          ],
         ),
       ),
       body: StreamBuilder(
